@@ -1,4 +1,4 @@
-# ukmmart
+# UKM - MART
 Platform Market Place bagi UKM (Usaha Kecil Menengah)
 
 
@@ -8,6 +8,7 @@ Platform Market Place bagi UKM (Usaha Kecil Menengah)
 * Arief
 * Brandes
 * Rahmat
+* Echrist
 
 ## Frontend
 * Siddiq
