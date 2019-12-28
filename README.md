@@ -2,14 +2,14 @@
 Platform Market Place bagi UKM (Usaha Kecil Menengah)
 
 
-#Team Developer
+# Team Developer
 
-##Backend
+## Backend
 Arief
 Brandes
 Rahmat
 
-###Frontend
+## Frontend
 Siddiq
 Pandu
 Dedi
