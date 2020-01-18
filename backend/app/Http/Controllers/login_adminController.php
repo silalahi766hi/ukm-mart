@@ -101,5 +101,6 @@ class login_adminController extends Controller
         $Login_admin->delete();
 
         return response()->json('board berhasil di hapus',200);
+        //
     }
 }
