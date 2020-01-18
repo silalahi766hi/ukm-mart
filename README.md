@@ -1,6 +1,8 @@
 # UKM - MART
 Platform Market Place bagi UKM (Usaha Kecil Menengah)
 
+Cara penggunaan api.product
+http://ukm-mart.yecanet.com/api/api/product untuk mendapatkan seluruh product
 
 # Team Developer
 

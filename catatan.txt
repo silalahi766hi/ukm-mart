@@ -1,0 +1,21 @@
+kerjaan ecrist di backend
+
+1. membuat login
+	- login pembeli dan databases
+	- login admin dan databases
+	- login ukm dan datases
+	- api 
+2. struktur table 
+	-
+	-
+	-
+	-
+	-
+3. data master 
+	-
+	-
+	-
+	-
+	-
+	-
+ 
