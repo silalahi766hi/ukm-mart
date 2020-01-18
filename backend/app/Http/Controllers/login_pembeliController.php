@@ -12,7 +12,7 @@ class login_pembeliController extends Controller
      */
     public function index()
     {
-        //
+        // 
     }
 
     /**

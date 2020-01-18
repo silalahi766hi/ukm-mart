@@ -20,6 +20,7 @@ class LoginPembeli extends Migration
             $table->timestamp('Email_verified_at')->nullable();
             $table->string('Password');
             $table->timestamp('Last_login');
+            //
         });
     }
 

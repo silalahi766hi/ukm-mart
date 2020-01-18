@@ -18,6 +18,7 @@ class LoginAdmin extends Migration
             $table->string('User_name', 50);
             $table->string('Password', 50);
             $table->timestamp('Last_login');
+            //
         });
     }
 

@@ -15,6 +15,7 @@ class login_adminController extends Controller
     {
         $data = User::all();
         return response()->json($data,200);
+        //
     }
 
     /**

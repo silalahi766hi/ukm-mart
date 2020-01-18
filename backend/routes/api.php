@@ -25,3 +25,4 @@ Route::get('/logout', 'login_adminController@destroy');
 Route::get('/login', 'login_pembeliController@create');
 Route::post('/login', 'login_pembeliController@store');
 Route::get('/logout', 'login_pembeliController@destroy');
+//
