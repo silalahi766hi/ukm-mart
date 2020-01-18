@@ -2,7 +2,7 @@
 Platform Market Place bagi UKM (Usaha Kecil Menengah)
 
 Cara penggunaan api.product
-http://ukm-mart.yecanet.com/api/api/product untuk mendapatkan seluruh product
+http://ukm-mart.yacanet.com/api/api/product untuk mendapatkan seluruh product
 
 # Team Developer
 
