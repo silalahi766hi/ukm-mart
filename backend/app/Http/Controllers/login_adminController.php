@@ -13,8 +13,8 @@ class login_adminController extends Controller
      */
     public function index()
     {
-        //$data = login_admiin :: ();
-        //return response () ->json($data,200);
+        $data = User::all();
+        return response()->json($data,200);
     }
 
     /**
@@ -35,7 +35,12 @@ class login_adminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         login_admin::create([
+         'User_name'=>$request->input('User_name'),
+             'Name'=>$request->input('Name'),
+         ]);
+
+         return response()->json('data board berhasil di simpan',200);
     }
 
     /**
@@ -69,7 +74,19 @@ class login_adminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // $login_admin = login_admin::find($id);
+        // if($login_admin == null)
+        // {
+        //     return response()->json('id tidak dikenali',404);
+        // }
+        // else
+        // {
+        //     $login_admin->=$request->input('creator_id');
+        //     $login_admin->name=$request->input('name');
+
+        //     $login_admin->save();
+        //     return response()->json('board berhasil di rubah',200);
+        // }
     }
 
     /**
@@ -80,6 +97,9 @@ class login_adminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $Login_admin =login_admin ::find($id);
+        $Login_admin->delete();
+
+        return response()->json('board berhasil di hapus',200);
     }
 }

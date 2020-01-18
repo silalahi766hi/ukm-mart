@@ -14,9 +14,11 @@ class LoginPembeli extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('Id');
             $table->string('User_name',50);
-            $table->string('Password',50);
+            $table->string('Email')->unique();
+            $table->timestamp('Email_verified_at')->nullable();
+            $table->string('Password');
             $table->timestamp('Last_login');
         });
     }

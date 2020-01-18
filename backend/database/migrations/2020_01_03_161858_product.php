@@ -14,13 +14,13 @@ class Product extends Migration
     public function up()
     {
         Schema::create('Product', function (Blueprint $table) {
-            $table->increments('id_product');
-            $table->string('nama_product',255);
-            $table->integer('id_category');
+            $table->increments('Id_product');
+            $table->string('Nama_product',255);
+            $table->integer('Id_category');
             $table->string('User_name',50);
-            $table->integer('stock');
-            $table->bigInteger('harga');
-            $table->string('deskripsi',255);
+            $table->integer('Stock');
+            $table->bigInteger('Harga');
+            $table->string('Deskripsi',255);
         });
     }
 

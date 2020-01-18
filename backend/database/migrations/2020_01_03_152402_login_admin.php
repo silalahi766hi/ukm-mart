@@ -14,7 +14,7 @@ class LoginAdmin extends Migration
     public function up()
     {
         Schema::create('admin', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('Id');
             $table->string('User_name', 50);
             $table->string('Password', 50);
             $table->timestamp('Last_login');

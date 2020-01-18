@@ -25,7 +25,12 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+            $create = new Product;
+            $create->Nama_product = $request->Nama_product;
+            $create->Id_category = $request->Id_category;
+            $create->Stock = $request->Stock;
+            $create->Harga = $request->Harga;
+            $create->save();
     }
 
     /**

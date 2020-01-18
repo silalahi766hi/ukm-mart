@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
 class login_pembeliController extends Controller
@@ -13,8 +12,7 @@ class login_pembeliController extends Controller
      */
     public function index()
     {
-        //$data = login_admiin :: ();
-        //return response () ->json($data,200);
+        //
     }
 
     /**
@@ -24,7 +22,7 @@ class login_pembeliController extends Controller
      */
     public function create()
     {
-        //
+        return view('Controller.create');
     }
 
     /**
@@ -35,7 +33,13 @@ class login_pembeliController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if (auth()->attempt(request(['User_name', 'Password'])) == false) {
+            return back()->withErrors([
+                'message' => 'The email or password is incorrect, please try again'
+            ]);
+        }
+        
+        return redirect()->to('/Home');
     }
 
     /**
@@ -80,6 +84,8 @@ class login_pembeliController extends Controller
      */
     public function destroy($id)
     {
-        //
+        auth()->logout();
+        
+        return redirect()->to('/Home');
     }
 }
